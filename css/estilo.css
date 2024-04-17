@@ -18,6 +18,7 @@ body {
 
 /* Barra de Navegação */
 nav.navbar-transparente {
+    font-weight: 600;
     padding: 15px 0px;
     background: rgba(0, 0, 0, 0.6);
 }
@@ -33,6 +34,7 @@ nav.navbar-transparente {
 .navbar-light .navbar-toggler {
     color: rgba(255, 255, 255, 0.5);
     border: 1px solid rgba(255, 255, 255, 0.5);
+    padding-top: 8px;
 }
 
 .divisor {
@@ -57,7 +59,8 @@ nav.navbar-transparente {
 }
 
 .btn-roxo {
-    background: #7c25f8;
+    background: #6959CD;
+    margin-right: 25px;
 }
 
 .btn-roxo:hover {
@@ -72,6 +75,10 @@ nav.navbar-transparente {
 .btn-branco:hover {
     background-color: white;
     color: black;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 5%;
 }
 /* Conteúdos */
 .caixa {
@@ -120,6 +127,7 @@ footer {
 
 footer h4 {
     color: #919496;
+    font-weight: 600;
     font-size: 0.8em;
     text-transform: uppercase;
 }
@@ -174,14 +182,83 @@ h3 {
     h1 {
         font-size: 3em;
     }
+    .divisor {
+     display: none;
+    }
     .btn-custom {
         margin: 10px 15px;
+    }
+    .btn-roxo {
+        font-size: 0.9em;
+    }
+    .btn-branco {
+        font-size: 0.9em;   
+    }
+    .albuns {
+        padding: 0px 0px;
+    }
+    footer {
+        padding: 10px 0 10px 0;
+        position: relative;
+    } 
+    .redes {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    } 
+    .rodape-redes {
+        align-items: center;
     }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
+    nav.navbar-transparente {
+        font-size: 0.9em;
+    }
+    
     h1 {
         font-size: 4em;
+    }
+    .btn-roxo {
+        margin-right: 15px;
+        font-size: 1em;
+    }
+    .btn-branco {
+        font-size: 1em;   
+    }
+    #servicos h2 {
+        font-size: 1.8em;
+    }
+    #servicos h3 {
+        font-size: 1.5em;
+    }
+    #servicos p {
+        font-size: 0.9em;
+    }
+    .albuns {
+        padding: 28px 0;
+    }
+    #recursos {
+        padding: 30px 0 10px 0;
+    }
+    
+    #recursos h2 {
+        font-size: 1.8em;
+    }
+    #recursos h3 {
+        font-size: 1.5em;
+    }
+    #recursos p {
+        font-size: 0.9em;
+    }
+    .rodape-redes {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+    }
+
+    .rodape-redes li {
+        margin-left: 0;
     }
 }
 
